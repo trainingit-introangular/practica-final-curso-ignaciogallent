@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build:prod": "ng build --prod",
-    "build:pub": "ng build --prod --output-path docs --base-href https://ignaciogallent.github.io/introduccion_angular_practicas/",
+    "build:pub": "ng build --prod --output-path docs --base-href https://trainingit-introangular.github.io/practica-final-curso-ignaciogallent/",
     "e2e": "ng e2e",
     "lint": "ng lint",
     "ng": "ng",
