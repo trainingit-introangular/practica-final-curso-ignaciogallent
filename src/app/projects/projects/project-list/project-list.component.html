@@ -1,0 +1,7 @@
+
+<app-filter-projects (changeSearch)="buscar($event)"></app-filter-projects>
+<hr/>
+<span *ngIf="isLoading">Cargando datos....</span>
+<mat-nav-list>
+  <mat-list-item *ngFor="let project of resultadoBusqueda" routerLink="viewer-project/{{project._id}}">{{project.name}}</mat-list-item>
+</mat-nav-list>

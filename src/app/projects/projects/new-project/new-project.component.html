@@ -1,0 +1,10 @@
+<a routerLink=".."><i class="fa fa-arrow-left fa-2x"></i></a>
+<hr />
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Nuevo proyecto</mat-card-title>
+  </mat-card-header>
+  <hr/>
+  <app-new-project-form (nuevoProyecto)="crearProyecto($event)"></app-new-project-form>
+</mat-card>

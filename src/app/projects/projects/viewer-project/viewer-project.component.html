@@ -1,0 +1,20 @@
+<a routerLink="../.."
+   class="no-decor"><i class="fa fa-arrow-left fa-2x"></i></a>
+<hr />
+
+<div *ngIf="project$ | async as project; else loadingOrError">
+  <app-viewer-project-form [project]="project"></app-viewer-project-form>
+</div>
+
+<ng-template #loadingOrError>
+  <div *ngIf="loadingError$ | async; else loading">
+    <div class="container">
+      <h3>Error cargando el proyecto</h3>
+    </div>
+  </div>
+  <ng-template #loading>
+    <div class="container">
+      <h3>Cargando datos...</h3>
+    </div>
+  </ng-template>
+</ng-template>
